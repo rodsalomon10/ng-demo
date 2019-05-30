@@ -8,8 +8,8 @@ describe('CardComponent', () => {
   let component: CardComponent;
   let fixture: ComponentFixture<CardComponent>;
 
-  let cardSvcSpy = jasmine.createSpyObj('DeckOfCardsService', ['drawCard']);
-  let card: Card = { value: '', suit: '', code: '', image: '' };
+  const cardSvcSpy = jasmine.createSpyObj('DeckOfCardsService', ['drawCard']);
+  const card: Card = { value: '', suit: '', code: '', image: '' };
   cardSvcSpy.drawCard.and.returnValue(Promise.resolve(card));
 
   beforeEach(async(() => {

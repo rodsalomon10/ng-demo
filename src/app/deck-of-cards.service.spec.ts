@@ -4,7 +4,7 @@ import { DeckOfCardsService } from './deck-of-cards.service';
 import { HttpClient } from '@angular/common/http';
 
 describe('DeckOfCardsService', () => {
-  let httpSpy = jasmine.createSpyObj('HttpClient', ['get']);
+  const httpSpy = jasmine.createSpyObj('HttpClient', ['get']);
 
 
   beforeEach(() => TestBed.configureTestingModule({

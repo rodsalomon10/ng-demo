@@ -39,8 +39,7 @@ export class DeckOfCardsService {
 
   // syntactic sugar to auto-bind this ctor parameter
   // to a new property on the class.
-  constructor(private http: HttpClient)
-  { }
+  constructor(private http: HttpClient) { }
   // (like the code below would do)
 
   // httpClient: HttpClient;

@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  data: string = 'initial';
-  theClass: string = 'grey';
+  data = 'initial';
+  theClass = 'grey';
 
   constructor() { }
 

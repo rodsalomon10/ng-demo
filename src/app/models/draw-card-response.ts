@@ -5,4 +5,4 @@ export interface DrawCardResponse {
     cards: Card[];
     deck_id: string;
     remaining: number;
-};
+}
