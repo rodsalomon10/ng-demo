@@ -24,9 +24,10 @@ steps:
   inputs:
     SonarCloud: 'sonarcloud-escalonn'
     organization: '1902-feb18-net'
-    scannerMode: 'MSBuild'
-    projectKey: '1904-ng-card'
-  displayName: 'Prepare SonarCloud analysis'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: '1904-ng-card'
+    cliSources: 'src'
 
 - script: npm run build-ci
   displayName: 'Build'
